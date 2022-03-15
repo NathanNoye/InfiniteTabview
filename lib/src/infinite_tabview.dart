@@ -17,9 +17,9 @@ typedef IndexedTapCallback = void Function(int index);
 /// Internally, the tabs and pages will build as just Scrollable elements like
 /// `ListView`. But these have massive index range from [double.negativeInfinity]
 /// to [double.infinity], so that these can scroll infinitely.
-class InfiniteScrollTabView extends StatelessWidget {
+class InfiniteTabView extends StatelessWidget {
   /// Creates a tab view widget that can scroll infinitely.
-  const InfiniteScrollTabView({
+  const InfiniteTabView({
     Key? key,
     required this.contentLength,
     required this.tabBuilder,
